@@ -280,7 +280,7 @@ Cross-Cultural Practice by Fudan University."
                   className="rounded-2xl bg-zinc-900 px-5 py-3 text-sm font-medium text-white hover:opacity-90 dark:bg-zinc-100 dark:text-zinc-900"
                   href="SiaTTT000@163.com"
                 >
-                  发邮件
+                  
                 </a>
                 <a
                   className="rounded-2xl border border-zinc-200 bg-white px-5 py-3 text-sm font-medium hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-900"
@@ -357,7 +357,7 @@ function ProjectCard({
         {desc}
       </p>
       <div className="mt-4 text-sm font-medium text-zinc-500 group-hover:text-zinc-900 dark:group-hover:text-zinc-100">
-        查看细节 →
+        →
       </div>
     </div>
   );
