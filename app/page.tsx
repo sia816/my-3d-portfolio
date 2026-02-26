@@ -95,7 +95,7 @@ export default function Home() {
               href="/resume.pdf"
               className="rounded-2xl bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:opacity-90 dark:bg-zinc-100 dark:text-zinc-900"
             >
-              下载简历
+              
             </a>
           </div>
         </div>
@@ -112,8 +112,7 @@ export default function Home() {
             </h1>
 
             <p className="mt-4 max-w-prose text-base text-zinc-600 dark:text-zinc-300">
-              我关注海外营销与增长运营，擅长用<strong>内容</strong>与
-              <strong>数据</strong>把“传播”做成可衡量、可复用、可增长的结果。
+            I focus on overseas marketing and growth operations, with the ability to leverage content and data to transform communication into measurable, scalable, and repeatable growth.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -128,19 +127,18 @@ export default function Home() {
                 onClick={() => scrollTo("contact")}
                 className="rounded-2xl bg-zinc-900 px-5 py-3 text-sm font-medium text-white hover:opacity-90 dark:bg-zinc-100 dark:text-zinc-900"
               >
-                联系我
+                Contact Me
               </button>
               <button
-                onClick={() => scrollTo("projects")}
-                className="rounded-2xl border border-zinc-200 bg-white px-5 py-3 text-sm font-medium hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-900"
+                onClick={() => scrollTo("experience")}
+                 className="rounded-2xl bg-zinc-900 px-5 py-3 text-sm font-medium text-white hover:opacity-90 dark:bg-zinc-100 dark:text-zinc-900"
               >
-                看项目
+                Internships
               </button>
             </div>
 
             <p className="mt-3 text-xs text-zinc-500">
-              提示：把你的简历 PDF 放到 <code className="px-1">public/resume.pdf</code>{" "}
-              就能让“下载简历”按钮生效。
+              
             </p>
           </div>
 
@@ -180,22 +178,21 @@ export default function Home() {
           <div className="grid gap-4 md:grid-cols-3">
             <div className="md:col-span-2 rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
               <p className="text-sm leading-7 text-zinc-700 dark:text-zinc-300">
-                这里放你的正式版自我介绍（建议 80–140 字）。写法：一句定位 +
-                两句能力/方法 + 一句你想去的方向。
+                
               </p>
               <div className="mt-4 grid gap-3 md:grid-cols-2">
-                <Metric label="偏好风格" value="学术/官方 & 有结果" />
-                <Metric label="方法论" value="内容 → 转化 → 数据复盘" />
+                <Metric label="Academic" value="Undergraduate:Sichuan Universtiy
+                Graduate:Zhejiang University/ MIIS" />
+                <Metric label="Skills" value="R Programming; Google Ads Certificate; MS Office " />
               </div>
             </div>
 
             <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
               <h3 className="text-sm font-semibold">Quick Facts</h3>
               <ul className="mt-4 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
-                <li>📍 Location: …</li>
-                <li>🎓 Program: …</li>
-                <li>🧩 Focus: Growth / Content</li>
-                <li>💬 Languages: CN/EN</li>
+                <li>📍 Location: Hangzhou</li>
+
+                <li>💬 Languages: Cet6(623); Tofel(104); Catti3 </li>
               </ul>
             </div>
           </div>
@@ -204,42 +201,67 @@ export default function Home() {
         <Section id="experience" title="Experience">
           <div className="grid gap-4 md:grid-cols-2">
             <Card
-              title="VAST Tripo — Overseas Influencer Marketing Intern"
-              subtitle="Outreach • Briefing • Review • Affiliate research"
+              title="VAST Tripo — Overseas Marketing Intern"
+      subtitle="2025.07-11"
               bullets={[
-                "完成海外 KOL 拓展与沟通，推动内容发布与复盘。",
-                "参与 Q3 outreach，跟踪回复率/推进率等过程指标。",
-                "协同数据与社区团队，支持内容分发与转化链路。",
+                "Participated in TripoAI 3.0 Q3 overseas KOL campaign, covering YouTube and Instagram, managing outreach, brief writing, agency coordination (X, TikTok), contract review, payment, content approval, and performance tracking (CPA/CPE/CPM/ROI…).",
+                "Designed the affiliate marketing framework, optimizing commission structure and landing page content; generated 300+ new monthly user registrations.",
+                "Managed Tripo’s official Xiaohongshu account, planning, writing, and publishing content that increased weekly followers by 200+.", 
+                "Collaborated with cross-functional teams (data, paid growth, Discord community, offline events) to optimize ROI, improve user engagement,and optimize campaign performance."
               ]}
             />
             <Card
-              title="（把你的第二段经历放这里）"
-              subtitle="岗位关键词 • 方向"
+              title="Hangzhou Broadcasting Group HZTV- International Influencer Operations Intern"
+              subtitle="2025.04-07"
               bullets={[
-                "写 1-2 句你做了什么（最好带数字）。",
-                "写你的方法/流程（比如：选题-制作-发布-复盘）。",
-                "写一个结果（增长、转化、曝光、效率）。",
+                "Supported 5 overseas short-video influencer collaborations, contributing to 10+ video campaigns in the cultural tourism vertical, published on TikTok and Channels.",
+                "Operated Instagram and X accounts, independently producing 15+ posts and coordinating with video teams to ensure timely and audienceoriented delivery.",
+                "Conducted content performance analysis, identifying high-engagement cases and documenting replicable KOL collaboration SOPs.",
               ]}
+              
             />
+            <Card
+      title="People’s Daily - Content Operations Intern"
+      subtitle="2024.04-07"
+      bullets={[
+        "Conducted content planning and localization, producing English-language stories aligned with global opinion trends.",
+        "Coordinated with overseas scholars and media experts for article authorization and video interviews, ensuring efficient cross-border content delivery.",
+        "Produced and translated 10+ published articles and short videos on official site, covering international relations, technology, and society.",
+      ]}
+    />
+     <Card
+      title="LightCourse EdTech - Product Operations Intern"
+      subtitle="2023.03-07"
+      bullets={[
+        "Researched North American universities (QS list) for credit transfer partnerships, building an internal course database.",
+        "Assisted in email and phone negotiations with U.S. universities and institutions, supporting academic program cooperation.",
+        "Conducted competitive products’ analysis and user behavior research with data team to optimize project content strategy.",
+      ]}
+    />
+            
           </div>
         </Section>
 
         <Section id="projects" title="Projects">
           <div className="grid gap-4 md:grid-cols-3">
             <ProjectCard
-              title="项目 A"
-              tag="Growth"
-              desc="一句话说清：你做了什么，带来什么结果。"
+              title="Digital Transformation & Communication Capacity Building in Rwanda"
+              tag="Project Lead"
+              desc="Conducted two-week field research on Rwanda’s digital transformation in fintech, agriculture, healthcare, and education.
+              
+              Delivered a presentation to 50+ international participants, proposing cross-cultural communication strategies and economic policy."
             />
             <ProjectCard
-              title="项目 B"
-              tag="Communication"
-              desc="一句话说清：策略/内容/传播打法。"
+              title="Nil Manel Foundation, Sri Lanka"
+              tag="Operations Lead"
+              desc="Coordinated with local NGOs to execute promotion and content projects, publishing bilingual content to enhance global visibility and web
+traffic."
             />
             <ProjectCard
-              title="项目 C"
-              tag="Research"
-              desc="一句话说清：研究问题、方法、发现。"
+              title="Volunteer Service & Support Nepal"
+              tag="International Teaching Volunteer"
+              desc="Designed and delivered English teaching curriculum, adapted to local needs; Produced 5+ live-recorded English courses, awarded Outstanding
+Cross-Cultural Practice by Fudan University."
             />
           </div>
         </Section>
@@ -248,27 +270,27 @@ export default function Home() {
           <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
-                <div className="text-sm text-zinc-500">Email</div>
+                <div className="text-sm text-zinc-500">Email/Mobile</div>
                 <div className="text-base font-semibold">
-                  your.email@example.com
+                  SiaTTT000@163.com/ 18975298776
                 </div>
               </div>
               <div className="flex flex-wrap gap-2">
                 <a
                   className="rounded-2xl bg-zinc-900 px-5 py-3 text-sm font-medium text-white hover:opacity-90 dark:bg-zinc-100 dark:text-zinc-900"
-                  href="mailto:your.email@example.com"
+                  href="SiaTTT000@163.com"
                 >
                   发邮件
                 </a>
                 <a
                   className="rounded-2xl border border-zinc-200 bg-white px-5 py-3 text-sm font-medium hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-900"
-                  href="#"
+                  href="https://www.linkedin.com/in/siya-tan-393436335/"
                 >
                   LinkedIn
                 </a>
                 <a
                   className="rounded-2xl border border-zinc-200 bg-white px-5 py-3 text-sm font-medium hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-900"
-                  href="#"
+                  href="https://github.com/sia816/my-3d-portfolio"
                 >
                   GitHub / Portfolio
                 </a>
